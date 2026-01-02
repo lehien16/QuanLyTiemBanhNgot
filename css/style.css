@@ -1215,8 +1215,8 @@ body.modal-open {
     }
 
     .icons-container .icons {
-        min-width: 120px;
-        max-width: 270px;
+        min-width: 180px;
+        max-width: 295px;
     }
 
     .footer-logo img {
