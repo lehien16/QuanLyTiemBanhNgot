@@ -1,0 +1,6 @@
+Tên đề tài: Quản lý tiệm bánh ngọt - The Pastry Shop
+Sinh viên thực hiện:
+    - Họ và tên: Lê Thuý Hiền
+    - Mã sinh viên: 23S1020018
+Lớp: Tin 3A
+Môn học: Phát triển ứng dung web
