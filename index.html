@@ -88,173 +88,397 @@
 
     <section class="products" id="products">
         <h1 class="heading">SẢN PHẨM</h1>
-        
-        <div class="swiper product-slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide box">
-                    <span class="discount">-15%</span>
-                    <div class="image">
-                        <img src="images/tart-trung.png" alt="">
-                        <div class="icons">
-                            <a href="#" class="fas fa-heart"></a>
-                            <a href="#" class="cart-btn">Thêm vào giỏ hàng</a>
-                            <a href="#" class="fas fa-share"></a>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3>Tart trứng ngàn lớp</h3>
-                        <div class="price"> 17,000 <span>20,000</span></div>
-                    </div>
-                </div>
 
-                <div class="swiper-slide box">
-                    <span class="discount">-5%</span>
-                    <div class="image">
-                        <img src="images/bo-toi.png" alt="">
-                        <div class="icons">
-                            <a href="#" class="fas fa-heart"></a>
-                            <a href="#" class="cart-btn">Thêm vào giỏ hàng</a>
-                            <a href="#" class="fas fa-share"></a>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3>Bánh mì bơ tỏi</h3>
-                        <div class="price"> 19,000 <span>20,000</span></div>
-                    </div>
-                </div>
+        <div class="category-nav">
+            <div class="category-nav-desktop">
+                <button class="category-btn active" data-category="all">Tất cả</button>
+                <button class="category-btn" data-category="banh-ngot">Bánh ngọt</button>
+                <button class="category-btn" data-category="banh-man">Bánh mặn</button>
+                <button class="category-btn" data-category="banh-cao-cap">Bánh cao cấp</button>
+                <button class="category-btn" data-category="banh-truyen-thong">Bánh truyền thống</button>
+            </div>
 
-                <div class="swiper-slide box">
-                    <span class="discount">-12%</span>
-                    <div class="image">
-                        <img src="images/croissant.png" alt="">
-                        <div class="icons">
-                            <a href="#" class="fas fa-heart"></a>
-                            <a href="#" class="cart-btn">Thêm vào giỏ hàng</a>
-                            <a href="#" class="fas fa-share"></a>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <h3>Croissant trứng muối</h3>
-                        <div class="price"> 22,000 <span>25,000</span></div>
-                    </div>
-                </div>
+            <div class="category-nav-mobile">
+                <select class="category-select" id="category-select">
+                    <option value="all">Tất cả</option>
+                    <option value="banh-ngot">Bánh ngọt</option>
+                    <option value="banh-man">Bánh mặn</option>
+                    <option value="banh-cao-cap">Bánh cao cấp</option>
+                    <option value="banh-truyen-thong">Bánh truyền thống</option>
+                </select>
+            </div>
+        </div>
 
-                <div class="swiper-slide box">
-                    <span class="discount">0%</span>
-                    <div class="image">
-                        <img src="images/su-kem.png" alt="">
-                        <div class="icons">
-                            <a href="#" class="fas fa-heart"></a>
-                            <a href="#" class="cart-btn">Thêm vào giỏ hàng</a>
-                            <a href="#" class="fas fa-share"></a>
+        <div class="products-container">
+            <div class="product-view active" id="view-all">
+                <div class="swiper product-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide box" data-category="banh-ngot">
+                            <span class="discount">-15%</span>
+                            <div class="image">
+                                <img src="images/tart-trung.png" alt="">
+                                <div class="icons">
+                                    <a href="#" class="fas fa-heart"></a>
+                                    <a href="#" class="cart-btn">Thêm vào giỏ hàng</a>
+                                    <a href="#" class="fas fa-share"></a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h3>Tart trứng ngàn lớp</h3>
+                                <div class="price"> 17,000 <span>20,000</span></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="content">
-                        <h3>Bánh su kem (Hộp 12 cái lớn)</h3>
-                        <div class="price"> 45,000 <span></span></div>
-                    </div>
-                </div>
 
-                <div class="swiper-slide box">
-                    <span class="discount">0%</span>
-                    <div class="image">
-                        <img src="images/brownie.png" alt="">
-                        <div class="icons">
-                            <a href="#" class="fas fa-heart"></a>
-                            <a href="#" class="cart-btn">Thêm vào giỏ hàng</a>
-                            <a href="#" class="fas fa-share"></a>
+                        <div class="swiper-slide box" data-category="banh-man">
+                            <span class="discount">-5%</span>
+                            <div class="image">
+                                <img src="images/bo-toi.png" alt="">
+                                <div class="icons">
+                                    <a href="#" class="fas fa-heart"></a>
+                                    <a href="#" class="cart-btn">Thêm vào giỏ hàng</a>
+                                    <a href="#" class="fas fa-share"></a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h3>Bánh mì bơ tỏi</h3>
+                                <div class="price"> 19,000 <span>20,000</span></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="content">
-                        <h3>Chocolate brownie</h3>
-                        <div class="price"> 18,000 <span></span></div>
-                    </div>
-                </div>
 
-                <div class="swiper-slide box">
-                    <span class="discount">-25%</span>
-                    <div class="image">
-                        <img src="images/banh-tao.png" alt="">
-                        <div class="icons">
-                            <a href="#" class="fas fa-heart"></a>
-                            <a href="#" class="cart-btn">Thêm vào giỏ hàng</a>
-                            <a href="#" class="fas fa-share"></a>
+                        <div class="swiper-slide box" data-category="banh-cao-cap">
+                            <span class="discount">-12%</span>
+                            <div class="image">
+                                <img src="images/croissant.png" alt="">
+                                <div class="icons">
+                                    <a href="#" class="fas fa-heart"></a>
+                                    <a href="#" class="cart-btn">Thêm vào giỏ hàng</a>
+                                    <a href="#" class="fas fa-share"></a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h3>Croissant trứng muối</h3>
+                                <div class="price"> 22,000 <span>25,000</span></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="content">
-                        <h3>Bánh táo</h3>
-                        <div class="price"> 24,000 <span>18,000</span></div>
-                    </div>
-                </div>
 
-                <div class="swiper-slide box">
-                    <span class="discount">0%</span>
-                    <div class="image">
-                        <img src="images/donut.png" alt="">
-                        <div class="icons">
-                            <a href="#" class="fas fa-heart"></a>
-                            <a href="#" class="cart-btn">Thêm vào giỏ hàng</a>
-                            <a href="#" class="fas fa-share"></a>
+                        <div class="swiper-slide box" data-category="banh-ngot">
+                            <span class="discount">0%</span>
+                            <div class="image">
+                                <img src="images/su-kem.png" alt="">
+                                <div class="icons">
+                                    <a href="#" class="fas fa-heart"></a>
+                                    <a href="#" class="cart-btn">Thêm vào giỏ hàng</a>
+                                    <a href="#" class="fas fa-share"></a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h3>Bánh su kem (Hộp 12 cái lớn)</h3>
+                                <div class="price"> 45,000 <span></span></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="content">
-                        <h3>Donut cầu vồng</h3>
-                        <div class="price"> 30,000 <span></span></div>
-                    </div>
-                </div>
 
-                <div class="swiper-slide box">
-                    <span class="discount">-10%</span>
-                    <div class="image">
-                        <img src="images/banh-bo.png" alt="">
-                        <div class="icons">
-                            <a href="#" class="fas fa-heart"></a>
-                            <a href="#" class="cart-btn">Thêm vào giỏ hàng</a>
-                            <a href="#" class="fas fa-share"></a>
+                        <div class="swiper-slide box" data-category="banh-ngot">
+                            <span class="discount">0%</span>
+                            <div class="image">
+                                <img src="images/brownie.png" alt="">
+                                <div class="icons">
+                                    <a href="#" class="fas fa-heart"></a>
+                                    <a href="#" class="cart-btn">Thêm vào giỏ hàng</a>
+                                    <a href="#" class="fas fa-share"></a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h3>Chocolate brownie</h3>
+                                <div class="price"> 18,000 <span></span></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="content">
-                        <h3>Bánh bò thốt nốt (Hộp 250g)</h3>
-                        <div class="price"> 58,500 <span>65,000</span></div>
-                    </div>
-                </div>
 
-                <div class="swiper-slide box">
-                    <span class="discount">0%</span>
-                    <div class="image">
-                        <img src="images/banh-mi.png" alt="">
-                        <div class="icons">
-                            <a href="#" class="fas fa-heart"></a>
-                            <a href="#" class="cart-btn">Thêm vào giỏ hàng</a>
-                            <a href="#" class="fas fa-share"></a>
+                        <div class="swiper-slide box" data-category="banh-ngot">
+                            <span class="discount">-25%</span>
+                            <div class="image">
+                                <img src="images/banh-tao.png" alt="">
+                                <div class="icons">
+                                    <a href="#" class="fas fa-heart"></a>
+                                    <a href="#" class="cart-btn">Thêm vào giỏ hàng</a>
+                                    <a href="#" class="fas fa-share"></a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h3>Bánh táo</h3>
+                                <div class="price"> 18,000 <span>24,000</span></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="content">
-                        <h3>Bánh mì nướng bơ đường (3 lát)</h3>
-                        <div class="price"> 20,000 <span></span></div>
-                    </div>
-                </div>
 
-                <div class="swiper-slide box">
-                    <span class="discount">0%</span>
-                    <div class="image">
-                        <img src="images/tiramisu.png" alt="">
-                        <div class="icons">
-                            <a href="#" class="fas fa-heart"></a>
-                            <a href="#" class="cart-btn">Thêm vào giỏ hàng</a>
-                            <a href="#" class="fas fa-share"></a>
+                        <div class="swiper-slide box" data-category="banh-ngot">
+                            <span class="discount">0%</span>
+                            <div class="image">
+                                <img src="images/donut.png" alt="">
+                                <div class="icons">
+                                    <a href="#" class="fas fa-heart"></a>
+                                    <a href="#" class="cart-btn">Thêm vào giỏ hàng</a>
+                                    <a href="#" class="fas fa-share"></a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h3>Donut cầu vồng</h3>
+                                <div class="price"> 30,000 <span></span></div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide box" data-category="banh-truyen-thong">
+                            <span class="discount">-10%</span>
+                            <div class="image">
+                                <img src="images/banh-bo.png" alt="">
+                                <div class="icons">
+                                    <a href="#" class="fas fa-heart"></a>
+                                    <a href="#" class="cart-btn">Thêm vào giỏ hàng</a>
+                                    <a href="#" class="fas fa-share"></a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h3>Bánh bò thốt nốt (Hộp 250g)</h3>
+                                <div class="price"> 58,500 <span>65,000</span></div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide box" data-category="banh-man">
+                            <span class="discount">0%</span>
+                            <div class="image">
+                                <img src="images/banh-mi.png" alt="">
+                                <div class="icons">
+                                    <a href="#" class="fas fa-heart"></a>
+                                    <a href="#" class="cart-btn">Thêm vào giỏ hàng</a>
+                                    <a href="#" class="fas fa-share"></a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h3>Bánh mì nướng bơ đường (3 lát)</h3>
+                                <div class="price"> 20,000 <span></span></div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide box" data-category="banh-cao-cap">
+                            <span class="discount">0%</span>
+                            <div class="image">
+                                <img src="images/tiramisu.png" alt="">
+                                <div class="icons">
+                                    <a href="#" class="fas fa-heart"></a>
+                                    <a href="#" class="cart-btn">Thêm vào giỏ hàng</a>
+                                    <a href="#" class="fas fa-share"></a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h3>Tiranama choco mận ổi hồng</h3>
+                                <div class="price"> 250,000 <span></span></div>
+                            </div>
                         </div>
                     </div>
-                    <div class="content">
-                        <h3>Tiranama choco mận ổi hồng</h3>
-                        <div class="price"> 250,000 <span></span></div>
-                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
 
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+            <div class="product-view" id="view-banh-ngot">
+                <div class="swiper product-slider-banh-ngot">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide box" data-category="banh-ngot">
+                            <span class="discount">-15%</span>
+                            <div class="image">
+                                <img src="images/tart-trung.png" alt="">
+                                <div class="icons">
+                                    <a href="#" class="fas fa-heart"></a>
+                                    <a href="#" class="cart-btn">Thêm vào giỏ hàng</a>
+                                    <a href="#" class="fas fa-share"></a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h3>Tart trứng ngàn lớp</h3>
+                                <div class="price"> 17,000 <span>20,000</span></div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide box" data-category="banh-ngot">
+                            <span class="discount">0%</span>
+                            <div class="image">
+                                <img src="images/su-kem.png" alt="">
+                                <div class="icons">
+                                    <a href="#" class="fas fa-heart"></a>
+                                    <a href="#" class="cart-btn">Thêm vào giỏ hàng</a>
+                                    <a href="#" class="fas fa-share"></a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h3>Bánh su kem (Hộp 12 cái lớn)</h3>
+                                <div class="price"> 45,000 <span></span></div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide box" data-category="banh-ngot">
+                            <span class="discount">0%</span>
+                            <div class="image">
+                                <img src="images/brownie.png" alt="">
+                                <div class="icons">
+                                    <a href="#" class="fas fa-heart"></a>
+                                    <a href="#" class="cart-btn">Thêm vào giỏ hàng</a>
+                                    <a href="#" class="fas fa-share"></a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h3>Chocolate brownie</h3>
+                                <div class="price"> 18,000 <span></span></div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide box" data-category="banh-ngot">
+                            <span class="discount">-25%</span>
+                            <div class="image">
+                                <img src="images/banh-tao.png" alt="">
+                                <div class="icons">
+                                    <a href="#" class="fas fa-heart"></a>
+                                    <a href="#" class="cart-btn">Thêm vào giỏ hàng</a>
+                                    <a href="#" class="fas fa-share"></a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h3>Bánh táo</h3>
+                                <div class="price"> 18,000 <span>24,000</span></div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide box" data-category="banh-ngot">
+                            <span class="discount">0%</span>
+                            <div class="image">
+                                <img src="images/donut.png" alt="">
+                                <div class="icons">
+                                    <a href="#" class="fas fa-heart"></a>
+                                    <a href="#" class="cart-btn">Thêm vào giỏ hàng</a>
+                                    <a href="#" class="fas fa-share"></a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h3>Donut cầu vồng</h3>
+                                <div class="price"> 30,000 <span></span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <div class="product-view" id="view-banh-man">
+                <div class="swiper product-slider-banh-man">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide box" data-category="banh-man">
+                            <span class="discount">-5%</span>
+                            <div class="image">
+                                <img src="images/bo-toi.png" alt="">
+                                <div class="icons">
+                                    <a href="#" class="fas fa-heart"></a>
+                                    <a href="#" class="cart-btn">Thêm vào giỏ hàng</a>
+                                    <a href="#" class="fas fa-share"></a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h3>Bánh mì bơ tỏi</h3>
+                                <div class="price"> 19,000 <span>20,000</span></div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide box" data-category="banh-man">
+                            <span class="discount">0%</span>
+                            <div class="image">
+                                <img src="images/banh-mi.png" alt="">
+                                <div class="icons">
+                                    <a href="#" class="fas fa-heart"></a>
+                                    <a href="#" class="cart-btn">Thêm vào giỏ hàng</a>
+                                    <a href="#" class="fas fa-share"></a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h3>Bánh mì nướng bơ đường (3 lát)</h3>
+                                <div class="price"> 20,000 <span></span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <div class="product-view" id="view-banh-cao-cap">
+                <div class="swiper product-slider-banh-cao-cap">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide box" data-category="banh-cao-cap">
+                            <span class="discount">-12%</span>
+                            <div class="image">
+                                <img src="images/croissant.png" alt="">
+                                <div class="icons">
+                                    <a href="#" class="fas fa-heart"></a>
+                                    <a href="#" class="cart-btn">Thêm vào giỏ hàng</a>
+                                    <a href="#" class="fas fa-share"></a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h3>Croissant trứng muối</h3>
+                                <div class="price"> 22,000 <span>25,000</span></div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide box" data-category="banh-cao-cap">
+                            <span class="discount">0%</span>
+                            <div class="image">
+                                <img src="images/tiramisu.png" alt="">
+                                <div class="icons">
+                                    <a href="#" class="fas fa-heart"></a>
+                                    <a href="#" class="cart-btn">Thêm vào giỏ hàng</a>
+                                    <a href="#" class="fas fa-share"></a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h3>Tiranama choco mận ổi hồng</h3>
+                                <div class="price"> 250,000 <span></span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <div class="product-view" id="view-banh-truyen-thong">
+                <div class="swiper product-slider-banh-truyen-thong">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide box" data-category="banh-truyen-thong">
+                            <span class="discount">-10%</span>
+                            <div class="image">
+                                <img src="images/banh-bo.png" alt="">
+                                <div class="icons">
+                                    <a href="#" class="fas fa-heart"></a>
+                                    <a href="#" class="cart-btn">Thêm vào giỏ hàng</a>
+                                    <a href="#" class="fas fa-share"></a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h3>Bánh bò thốt nốt (Hộp 250g)</h3>
+                                <div class="price"> 58,500 <span>65,000</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
         </div>
     </section>
 

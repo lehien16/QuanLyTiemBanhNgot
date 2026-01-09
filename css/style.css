@@ -850,6 +850,94 @@ input[type="password"]::-ms-clear {
     width: 100%;
 }
 
+.category-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.category-nav-desktop {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.category-nav-mobile {
+    display: none;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 0 20px;
+}
+
+.category-btn {
+    padding: 12px 24px;
+    border: 2px solid #1f2f5c;
+    background: transparent;
+    color: #1f2f5c;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.category-btn:hover {
+    background: #1f2f5c;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(31, 47, 92, 0.3);
+}
+
+.category-btn.active {
+    background: #1f2f5c;
+    color: white;
+    box-shadow: 0 5px 15px rgba(31, 47, 92, 0.3);
+}
+
+.category-select {
+    padding: 10px 20px;
+    border: 2px solid #1f2f5c;
+    border-radius: 20px;
+    background: white;
+    color: #1f2f5c;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    min-width: 150px;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231f2f5c' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px;
+    padding-right: 10px;
+    margin-left: 220px;
+    margin-top: 10px;
+    margin-bottom: -30px;
+}
+
+.category-select:focus {
+    border-color: #1f2f5c;
+    box-shadow: 0 0 0 3px rgba(31, 47, 92, 0.1);
+}
+
+.products-container {
+    position: relative;
+    min-height: 500px;
+}
+
+.product-view {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.product-view.active {
+    display: block;
+    opacity: 1;
+}
+
 .products .swiper {
     width: 100%;
     padding: 40px 60px;
@@ -1679,7 +1767,7 @@ input[type="password"]::-ms-clear {
 
     header img {
         height: 120px;
-        margin-left: 40px;
+        margin-left: 80px;
     }
 
     header .icons {
@@ -1796,6 +1884,14 @@ input[type="password"]::-ms-clear {
         width: 100%;
         text-align: center;
         margin-bottom: 5px;
+    }
+
+    .category-nav-desktop {
+        display: none;
+    }
+    
+    .category-nav-mobile {
+        display: flex;
     }
 
     .products .swiper {
@@ -1932,6 +2028,7 @@ input[type="password"]::-ms-clear {
 
     .aboutus {
         padding: 5px 5%;
+        margin-top: -80px;
     }
 
     .aboutus .row {
