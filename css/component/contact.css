@@ -1,0 +1,94 @@
+.contact {
+    padding: 20px 5%;
+    background: linear-gradient(rgba(236, 236, 236, 0.295), rgba(133, 174, 214, 0.538), white);
+}
+
+.contact .row {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact .row form {
+    flex: 1 1 400px;
+    padding: 40px 30px;
+    text-align: left;
+}
+
+.contact .row form .box {
+    width: 100%;
+    padding: 14px 18px;
+    margin: 12px 0;
+    border: 1px solid #ddd;
+    font-size: 17px;
+    background: #f9f9f9;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.contact .row form .box:focus {
+    outline: none;
+    border-color: #1f2f5c;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(31, 47, 92, 0.1);
+}
+
+.contact .row form textarea.box {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.contact .row form .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 40px;
+    background: #1f2f5c;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.contact .row form .btn:hover {
+    background: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contact .row .image {
+    flex: 1 1 400px;
+}
+
+.contact .row .image img {
+    width: 100%;
+    height: 450px;
+    margin-top: -70px;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .contact .row form .btn {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .contact .row .image {
+        display: none;
+    }
+
+    .contact .row {
+        margin-top: 30px;
+    }
+}

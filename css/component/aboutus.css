@@ -1,0 +1,281 @@
+.aboutus {
+    padding: 20px 5%;
+    background: linear-gradient(rgba(255, 255, 255, 0.65) 40%, rgba(133, 174, 214, 0.538) 100%);
+}
+
+.aboutus .row {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.aboutus .row .video-container {
+    flex: 1 1 640px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.aboutus .row .video-container::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+}
+
+.aboutus .row .video-container video {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px); 
+    object-fit: cover;
+    display: block;
+}
+
+.aboutus .row .content {
+    flex: 1 1 640px;
+}
+
+.aboutus .row .content h3 {
+    font-size: 32px;
+    background: linear-gradient(#1f2f5c,rgba(38, 101, 164, 0.551));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+    margin-top: -15px;
+    font-weight: bold;
+}
+
+.aboutus .row .content p {
+    font-size: 17px;
+    color: #666;
+    line-height: 1.4;
+    margin-bottom: 16px;
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.more-text {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease;
+    margin-top: -10px;
+}
+
+#toggle-more:checked ~ .more-text {
+    max-height: 300px;
+}
+
+.btn-read-more {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #1f2f5c;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn-read-more:hover {
+    background: #333;
+    transform: translateY(-2px);
+}
+
+#toggle-more:checked ~ .btn-read-more::before {
+    content: "Thu gọn ";
+}
+
+.btn-read-more::before {
+    content: "Xem thêm ";
+}
+
+.btn-read-more::after {
+    content: "↓";
+    margin-left: 8px;
+    transition: transform 0.4s ease;
+}
+
+#toggle-more:checked ~ .btn-read-more::after {
+    content: "↑";
+    transform: rotate(180deg);
+}
+
+.icons-container {
+    background: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 15px;  
+    justify-content: center;
+}
+
+.icons-container .icons {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    flex: 1 1 80px;  
+    min-width: 200px;
+    max-width: 330px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.icons-container .icons img {
+    height: 50px; 
+    width: 50px;
+    object-fit: contain;
+    margin-right: 32px; 
+}
+
+.icons-container .icons h3 {
+    background: linear-gradient(#1f2f5c,rgba(38, 101, 164, 0.551));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.icons-container .icons span {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+@media (max-width: 1368px) and (min-width: 769px) {
+    .aboutus .row .content h3 {
+        font-size: 28px;
+    }
+
+    .aboutus .row {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        flex-wrap: nowrap;
+    }
+
+    .aboutus .row .video-container {
+        flex: 1 1 45%;
+        min-width: 400px;
+        height: 370px;
+    }
+
+    .aboutus .row .content {
+        flex: 1 1 45%;
+        min-width: 400px;
+    }
+
+    .aboutus .row .content p {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .icons-container .icons {
+        min-width: 180px;
+        max-width: 290px;
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutus {
+        padding: 5px 5%;
+        margin-top: -80px;
+    }
+
+    .aboutus .row {
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .aboutus .row .video-container {
+        order: 1;
+        width: 100%;
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        display: block;
+        padding: 8px;
+        flex: none;
+        margin-top: 20px;
+    }
+
+    .aboutus .row .video-container::before {
+        display: none;
+        padding-top: 0;
+        content: none;
+    }
+
+    .aboutus .row .video-container video {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: contain;
+        display: block;
+    }
+
+    .aboutus .row .content {
+        order: 2;
+    }
+
+    .aboutus .row .content h3 {
+        font-size: 28px;
+        text-align: center;
+        margin-top: -10px;
+    }
+
+    .aboutus .row .content p {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .btn-read-more {
+        width: 100%;
+        max-width: 300px;
+        margin: 20px auto 0;
+        display: block;
+    }
+
+    .icons-container {
+        padding: 20px 5%;
+        gap: 10px;
+        margin-top: -200px;
+        z-index: 10;
+    }
+
+    .icons-container .icons {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 10px;
+    }
+
+    .icons-container .icons img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .icons-container .icons h3 {
+        font-size: 15px;
+        margin-bottom: -10px;
+    }
+
+    .icons-container .icons span {
+        font-size: 10px;
+    }
+}
