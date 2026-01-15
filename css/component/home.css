@@ -1,0 +1,254 @@
+.home {
+    background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(36, 145, 255, 0.153),rgba(255, 255, 255, 0.65)), url('../../images/bg-desktop.jpg');
+    object-fit: fill;
+    background-size: cover;
+    background-position: center;
+    width: 1298px;
+    padding: 290px 9%;
+    margin-left: -50px;
+    margin-top: -33px;
+    text-align: center;
+    position: relative;
+}
+
+.slogan,
+.note {
+    font-size: 18px;
+    position: absolute;
+    left: 17%;
+    top: 75%;
+    transform: translateX(-50%);
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.8);
+}
+
+.note {
+    font-size: 15px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    left: -15px;
+}
+
+.rating {
+    position: relative;
+    top: 260px;
+    left: 30px;
+    text-align: right;
+    border-right: 1px solid #1f2f5c;
+}
+
+.score,
+.stars {
+    font-size: 50px;
+    font-weight: 700;
+    background: linear-gradient(white,#1f2f5c,rgba(36, 145, 255, 0.279));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    right: 70px;
+}
+
+.stars {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.return {
+    position: relative;
+    top: 260px;
+    left: 30px;
+    text-align: left;
+    display: flex;
+    gap: 20px;
+}
+
+.hours,
+.text {
+    font-size: 50px;
+    font-weight: 700;
+    background: linear-gradient(white,#1f2f5c,rgba(36, 145, 255, 0.279));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    left: 70px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    background: linear-gradient(#1f2f5c,rgba(34, 100, 166, 0.8),#1f2f5c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    top: 5px;
+}
+
+.shop-btn {
+    background-color: white;
+    color: #1f2f5c;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 86%;
+    top: 78%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.shop-btn:hover {
+    background: #1f2f5c;
+    color: white;
+    transform: translateX(-50%) translateY(-2px);
+    box-shadow: 0 4px 12px rgba(31, 47, 92, 0.3);
+}
+
+@media (max-width: 1368px) and (min-width: 769px) {
+    .home {
+        width: 100vw;
+        margin-left: -80px;
+        padding: 290px 5%;
+    }
+
+    .slogan,
+    .note {
+        left: 18%;
+        font-size: 16px;
+    }
+
+    .note {
+        font-size: 14px;
+    }
+
+    .shop-btn {
+        left: 83%;
+        padding: 10px 35px;
+        font-size: 15px;
+    }
+
+    .score,
+    .stars,
+    .hours,
+    .text {
+        font-size: 45px;
+    }
+
+    .stars,
+    .text {
+        font-size: 18px;
+    }
+
+    .rating {
+        right: 50px;
+    }
+
+    .return {
+        left: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(36, 145, 255, 0.5)), url('../../images/bg-mobile.png');
+        background-position: center;
+        width: 100vw;
+        margin-left: -10px;
+        margin-top: -200px;
+        padding: 50px 5%;
+        min-height: 70vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .slogan {
+        position: relative;
+        font-size: 16px;
+        top: 400px;
+        left: 195px;
+        white-space: nowrap;
+        text-shadow: 0 3px 6px rgba(0, 0, 0, 0.9);
+    }
+
+    .note {
+        position: relative;
+        font-size: 14px;
+        top: 345px;
+        left: 195px;
+        text-shadow: 0 3px 6px rgba(0, 0, 0, 0.9);
+    }
+
+    .info-grid {
+        display: none;
+    }
+
+    .shop-btn {
+        position: relative;
+        left: 195px;
+        top: 370px;
+        padding: 10px 2px;
+        font-size: 10px;
+        width: 100px;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .shop-btn:hover {
+        background: #1f2f5c;
+        color: white;
+    }
+
+    .cart-modal-content {
+        width: 95%;
+        margin: 10% auto;
+        max-height: 85vh;
+    }
+
+    .cart-header h2 {
+        font-size: 20px;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .cart-item img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+        align-self: center;
+    }
+
+    .cart-item-info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .cart-item-controls {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .cart-count {
+        width: 18px;
+        height: 18px;
+        font-size: 10px;
+        top: -6px;
+        right: -6px;
+    }
+}
